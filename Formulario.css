@@ -1,0 +1,132 @@
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: sans-serif;
+    color: #2C3E50; /* Azul escuro para o título */
+    margin-left: 7%;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: sans-serif;
+    color: #2C3E50; /* Azul escuro para o subtítulo */
+    margin-left: 10%;
+} 
+
+#check {
+    display: inline-block;
+}
+
+/* Elementos de tag <fieldset> */
+fieldset {
+    border: 0;
+}
+
+/* Elemento de tag <body> */
+body {
+    background-color: #D3D8E0; /* Azul acinzentado para fundo */
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #2C3E50; /* Texto em azul escuro */
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+/* Elementos de tags <body>, <input>, <select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #2C3E50; /* Texto em azul escuro */
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Para todos os campos de input, select e textarea */
+.campo input[type="text"], .campo input[type="password"], .campo input[type="Telefone"], .campo select[type="preferencia"], .campo textarea {
+    padding: 0.4em;  /* Aumenta o padding para mais consistência */
+    border: 1px solid #2C3E50; /* Azul escuro para borda */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 100%;  /* Garante que o campo ocupe todo o espaço disponível */
+    box-sizing: border-box;  /* Considera o padding e a borda no tamanho do campo */
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: #2C3E50; /* Azul escuro para labels */
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input>, <select>, <textarea> */
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #2C3E50; /* Azul escuro para borda */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option> */
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus" */
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #A1B3C1; /* Azul mais claro para destaque ao focar */
+}
+
+/* Botões */
+.botao-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 1em; /* Adiciona um espaço entre os botões */
+    margin-top: 20px; /* Adiciona um espaço acima, para que não fiquem grudados no formulário */
+}
+
+/* Botões */
+.botao {
+    font-size: 1.2em;
+    background-color: #2C3E50; /* Azul escuro */
+    color: #FFFFFF; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #A1B3C1; /* Azul mais claro no hover */
+}
+
+
+
+

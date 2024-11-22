@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Consulta</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Pré-Consulta Médica com Inteliência Artificial </h1>
+            <p id="subtitulo">Complete com suas informações</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                
+                <!-- Idade -->
+                <div class="campo">
+                <label for="idade"><strong>Idade:</strong></label>
+                <input type="text" id="idade" name="idade" size="3" maxlength="3" required><br><br>
+            </fieldset> 
+
+             <!-- Sexo -->
+            <p><strong>Sexo:</strong></p>
+            <input type="radio" id="masculino" name="sexo" value="Masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="Feminino">
+            <label for="feminino">Feminino</label><br><br>
+
+            <fieldset class="grupo">
+                <!-- Contato -->
+                <div class="campo">
+                   <label for="Telefone"><strong>Telefone</strong></label>
+                   <input type="Telefone" name="Telefone" id="Telefone" required>
+                </div>
+           
+                <!-- Campo de email com-->
+                <div class="campo">
+                   <label for="email"><strong>Email</strong></label>
+                   <input type="email" name="email" id="email" required>
+                </div>
+            </fieldset> 
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="Sintomas"><strong>Sintomas principais: </strong></label>
+                <textarea rows="6" style="width: 26em" id="Sintomas" name="Sintomas"></textarea>
+            </div>
+
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Possui algum desses fatores de risco?</strong></label>
+                <label>
+                <input type="radio" name="Diabetes" value="Diabetes">Diabetes
+                </label>
+                <label>
+                    <input type="radio" name="Hipertensão" value="Hipertensão">Hipertensão
+                </label>
+                <label>
+                    <input type="radio" name="Fumante" value="Fumante">Fumante
+                </label>
+            </div>
+
+            
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="Alergia"><strong>Possui alguma alergia? </strong></label>
+                <textarea rows="6" style="width: 26em" id="Alergia" name="Alergia"></textarea>
+            </div>
+
+           
+             <!-- Texto explicativo -->
+            <p>
+               Nosso modelo de Inteligência Artificial foi projetado para analisar sintomas, identificar possíveis causas e até prever problemas futuros com base nas informações fornecidas. 
+               Compartilhar seus dados ajuda a aprimorar a precisão e a eficácia do sistema, beneficiando a você e outros pacientes.
+            </p>
+
+
+            <!-- Aceita compartilhar dados -->
+            <p><strong>Você concorda em compartilhar os dados para aprimorar a Inteligência Artificial?</strong></p>
+             <input type="radio" id="sim" name="compartilha" value="Sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="compartilha" value="Não">
+            <label for="nao">Não</label><br><br>
+
+                <!-- Preferências -->
+            <label for="preferencia"><strong>Qual é o melhor horário para atendimento?</strong></label>
+            <select id="preferencia" name="preferencia">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+            </select><br><br>
+
+            <!-- Senha (apenas exemplo técnico) -->
+            <div class="campo">
+              <label for="senha"><strong>Senha da consulta (a que você recebeu junto com o formulário):</strong></label>
+              <input type="password" id="senha" name="senha" maxlength="20"><br><br>
+            </div>
+
+            <!-- Botões -->
+            <div class="botao-container">
+                <button class="botao" type="submit">Concluído</button>            
+                <button class="botao" type="reset">Limpar</button>
+            </div>
+
+        </form>
+         </body>
+         </html>
+
+    </body>
+
+</html>
+
+
+
+
